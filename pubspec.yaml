@@ -1,0 +1,54 @@
+name: hypefour
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_tabler_icons: ^1.21.0
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Satoshi
+      fonts:
+        - asset: packages/hypefour/fonts/Satoshi-Light.otf
+          weight: 300
+        - asset: packages/hypefour/fonts/Satoshi-Regular.otf
+          weight: 400
+        - asset: packages/hypefour/fonts/Satoshi-Medium.otf
+          weight: 500
+        - asset: packages/hypefour/fonts/Satoshi-Bold.otf
+          weight: 700
+        - asset: packages/hypefour/fonts/Satoshi-Black.otf
+          weight: 900
+
+        - asset: packages/hypefour/fonts/Satoshi-LightItalic.otf
+          weight: 300
+          style: italic
+        - asset: packages/hypefour/fonts/Satoshi-Italic.otf
+          weight: 400
+          style: italic
+        - asset: packages/hypefour/fonts/Satoshi-MediumItalic.otf
+          weight: 500
+          style: italic
+        - asset: packages/hypefour/fonts/Satoshi-BoldItalic.otf
+          weight: 700
+          style: italic
+        - asset: packages/hypefour/fonts/Satoshi-BlackItalic.otf
+          weight: 900
+          style: italic
