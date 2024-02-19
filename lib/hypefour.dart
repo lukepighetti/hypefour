@@ -15,6 +15,12 @@ const double p32 = 4 * p8;
 const double p40 = 5 * p8;
 const double p48 = 6 * p8;
 
+const double f10 = 10;
+const double f12 = 12;
+const double f14 = 14;
+const double f18 = 18;
+const double f32 = 32;
+
 const double t2 = 2.0;
 
 typedef HypeFourIcons = TablerIcons;

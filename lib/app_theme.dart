@@ -8,8 +8,9 @@ class AppTheme extends ThemeExtension<AppTheme> {
   final onBg = HypeFourStyles.fg.onLight1;
   late final subtleBg = bg.withOpacity(0.9);
   final onSubtleBg = HypeFourStyles.fg.onLight1;
+  final skrimColor = Colors.black54;
   final fillDark = HypeFourStyles.bg.dark2;
-  final onFillDark = HypeFourStyles.fg.onDark2;
+  final onFillDark = HypeFourStyles.fg.onDark1;
   final fillLight = HypeFourStyles.bg.light1;
   final onFillLight = HypeFourStyles.fg.onLight1;
 
