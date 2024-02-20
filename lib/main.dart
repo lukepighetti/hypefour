@@ -45,6 +45,7 @@ class MyHomePage extends StatelessWidget {
             child: AnnotatedRegion(
               value: SystemUiOverlayStyle.light,
               child: ClipPath(
+                clipBehavior: Clip.antiAliasWithSaveLayer,
                 clipper: const ShapeBorderClipper(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
@@ -102,6 +103,7 @@ class MyHomePage extends StatelessWidget {
                       right: 0,
                       height: p40 * 2,
                       child: ClipPath(
+                        // clipBehavior: Clip.none,
                         clipper: const ShapeBorderClipper(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
@@ -111,7 +113,10 @@ class MyHomePage extends StatelessWidget {
                           ),
                         ),
                         child: BackdropFilter(
-                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                          filter: ImageFilter.blur(
+                              sigmaX: 10,
+                              sigmaY: 10,
+                              tileMode: TileMode.repeated),
                           child: ColoredBox(
                             color: context.theme.fillLight.withOpacity(0.05),
                             child: SingleChildScrollView(
